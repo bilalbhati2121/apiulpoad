@@ -1,7 +1,11 @@
 import  express  from "express";
-import db from "./config/db.js";
+ import db from "./config/db.js";
+
 import router from "./routes/signup.routes.js";
 const app = express();
+
+
+
 app.use(express.json())
 db()
 app.use(router)
